@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700;800&display=swap');
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
 body {
-  font-family: Inter;
   margin: 1rem;
 }
 #root {
@@ -34,6 +39,11 @@ body {
 }
 .nav-links ul {
   display: flex;
+}
+
+header section {
+  padding-top: 1.5rem;
+  font-weight: 800;
 }
 
 @media (max-width: 900px) {
