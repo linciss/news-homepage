@@ -4,7 +4,12 @@ function Content() {
   return (
     <>
       <header className="mt-3">
-        <img src={imageWebDesk} alt="isssmage" width="61%" />
+        <img
+          src={imageWebDesk}
+          alt="isssmage"
+          width="65%"
+          className="header-img"
+        />
       </header>
     </>
   );

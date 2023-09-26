@@ -6,7 +6,7 @@ function Bar() {
 
   return (
     // bg-body-tertiary me-auto ms-auto p-0
-    <Navbar className="nav" expand="lg">
+    <Navbar className="nav">
       <Container fluid className="m-0 p-0 justify-content-between">
         <div
           className="menu"
