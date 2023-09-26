@@ -1,10 +1,14 @@
-import { Navbar, Container, Nav } from 'react-bootstrap';
+import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 
 function Bar() {
   return (
     // bg-body-tertiary
-    <Navbar className="">
-      <Container className="">
+    <Navbar
+      fill="true"
+      justify="true"
+      className="me-auto ms-auto p-0 overflow-hidden"
+    >
+      <Container className="m-0 p-0 mw-1000px">
         <Navbar.Brand href="#home">
           <svg width="65" height="40" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -13,13 +17,25 @@ function Bar() {
             />
           </svg>
         </Navbar.Brand>
-        <Nav>
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#new">New</Nav.Link>
-          <Nav.Link href="#popular">Popular</Nav.Link>
-          <Nav.Link href="#trending">Trending</Nav.Link>
-          <Nav.Link href="#categories">Categories</Nav.Link>
-        </Nav>
+        <Navbar.Toggle />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto  float-left d-block text-center">
+            <Nav.Link className="me-4" href="#home">
+              Home
+            </Nav.Link>
+            <Nav.Link className="me-4" href="#new">
+              New
+            </Nav.Link>
+            <Nav.Link className="me-4" href="#popular">
+              Popular
+            </Nav.Link>
+            <Nav.Link className="me-4" href="#trending">
+              Trending
+            </Nav.Link>
+            <Nav.Link href="#categories">Categories</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );

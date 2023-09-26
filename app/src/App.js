@@ -1,13 +1,13 @@
 import './App.css';
 import Bar from './Components/Navbar';
-import Content from './Components/Content';
+import Header from './Components/Header';
 
 function App() {
   return (
-    <div className="mt-5">
+    <div className="m-5">
       <Bar />
 
-      <Content />
+      <Header />
     </div>
   );
 }
