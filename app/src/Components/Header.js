@@ -3,8 +3,8 @@ import imageWebDesk from '../assets/images/image-web-3-desktop.jpg';
 function Content() {
   return (
     <>
-      <header>
-        <img src={imageWebDesk} alt="isssmage" width="70%" />
+      <header className="mt-3">
+        <img src={imageWebDesk} alt="isssmage" width="61%" />
       </header>
     </>
   );

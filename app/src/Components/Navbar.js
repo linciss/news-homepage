@@ -1,14 +1,31 @@
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
+import { useState } from 'react';
 
 function Bar() {
+  const [menuOpened, setMenuOpened] = useState(false);
+
   return (
-    // bg-body-tertiary
-    <Navbar
-      fill="true"
-      justify="true"
-      className="me-auto ms-auto p-0 overflow-hidden"
-    >
-      <Container className="m-0 p-0 mw-1000px">
+    // bg-body-tertiary me-auto ms-auto p-0
+    <Navbar className="nav" expand="lg">
+      <Container fluid className="m-0 p-0 justify-content-between">
+        <div
+          className="menu"
+          onClick={() => {
+            setMenuOpened(!menuOpened);
+          }}
+        >
+          <svg
+            className={menuOpened ? 'open' : ''}
+            width="40"
+            height="17"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g fill="#00001A" fill-rule="evenodd">
+              <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
+              <path d="M0 0h40v3H0z" />
+            </g>
+          </svg>
+        </div>
         <Navbar.Brand href="#home">
           <svg width="65" height="40" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -17,23 +34,27 @@ function Bar() {
             />
           </svg>
         </Navbar.Brand>
-        <Navbar.Toggle />
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto  float-left d-block text-center">
-            <Nav.Link className="me-4" href="#home">
-              Home
-            </Nav.Link>
-            <Nav.Link className="me-4" href="#new">
-              New
-            </Nav.Link>
-            <Nav.Link className="me-4" href="#popular">
-              Popular
-            </Nav.Link>
-            <Nav.Link className="me-4" href="#trending">
-              Trending
-            </Nav.Link>
-            <Nav.Link href="#categories">Categories</Nav.Link>
+          <Nav className="ms-auto nav-links">
+            <ul className={menuOpened ? 'open' : ''}>
+              {' '}
+              <Nav.Link className="me-4 " href="#home">
+                Home
+              </Nav.Link>
+              <Nav.Link className="me-4 " href="#new">
+                New
+              </Nav.Link>
+              <Nav.Link className="me-4 " href="#popular">
+                Popular
+              </Nav.Link>
+              <Nav.Link className="me-4 " href="#trending">
+                Trending
+              </Nav.Link>
+              <Nav.Link href="#categories" className="">
+                Categories
+              </Nav.Link>
+            </ul>
           </Nav>
         </Navbar.Collapse>
       </Container>
