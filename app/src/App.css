@@ -12,12 +12,12 @@ body {
 }
 
 #root {
-  max-width: 1140px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
 .nav-links a:hover {
-  color: orange;
+  color: hsl(5, 85%, 63%);
 }
 
 .menu {
@@ -43,10 +43,75 @@ body {
 
 header section {
   padding-top: 1.5rem;
-  font-weight: 800;
+  display: flex;
 }
 
-@media (max-width: 900px) {
+header section h1 {
+  font-weight: 800;
+  color: #000;
+  font-size: 3rem;
+}
+section {
+  display: block;
+}
+header section span {
+  padding-right: 3rem;
+  width: 50%;
+}
+header section article {
+  width: 50%;
+}
+header {
+  width: 65%;
+  display: block;
+  grid-area: header;
+}
+header img {
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.new {
+  width: 35%;
+  background-color: hsl(240, 100%, 5%);
+  display: flex;
+  margin-left: 3rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.new h1 {
+  color: hsl(35, 77%, 62%);
+  font-weight: bold;
+}
+.new h5 {
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+}
+.new article p {
+  color: hsl(231, 4%, 65%);
+}
+hr {
+  border: 1px solid hsl(0, 0%, 100%);
+  width: 100%;
+  margin: auto;
+}
+.new article {
+  margin: 1.5rem;
+}
+.button-div button {
+  background-color: hsl(5, 85%, 63%);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 0px;
+  width: 50%;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.button-div button:hover {
+  background-color: hsl(240, 100%, 5%);
+}
+@media (max-width: 750px) {
   .menu {
     display: flex;
     cursor: pointer;
@@ -80,10 +145,48 @@ header section {
     margin-top: 22px;
   }
 
-  .header-img {
+  header section {
+    display: flex;
+    flex-direction: column;
+  }
+  header section span {
     width: 100%;
+  }
+  header section p {
+    margin: 0rem;
+  }
+  header img {
+    width: 100%;
+    height: 50vh;
     background-repeat: no-repeat;
-    background-position: center;
-    block-size: 300px;
+    background-size: 100%;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  header {
+    width: 100%;
+  }
+  .new {
+    width: 100%;
+    margin: 3rem 0;
+  }
+}
+
+@media (max-width: 980px) {
+  header section {
+    display: flex;
+    flex-direction: column;
+  }
+  header section span {
+    width: 100%;
+  }
+  header section article {
+    width: 100%;
+  }
+  header section p {
+    margin: 0rem;
   }
 }
