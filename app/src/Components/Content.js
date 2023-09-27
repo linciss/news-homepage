@@ -1,5 +1,8 @@
 import { Card, Button } from 'react-bootstrap';
 import imageWebDesk from '../assets/images/image-web-3-desktop.jpg';
+import retroImg from '../assets/images/image-retro-pcs.jpg';
+import laptopImg from '../assets/images/image-top-laptops.jpg';
+import gamingImg from '../assets/images/image-gaming-growth.jpg';
 function Content() {
   return (
     <>
@@ -14,7 +17,6 @@ function Content() {
           />
           <section className="header-text d-flex ">
             <span className="">
-              {' '}
               <h1>The Bright Future of Web 3.0?</h1>
             </span>
 
@@ -35,23 +37,52 @@ function Content() {
           <article className="">
             <h5>Hydrogen VS Electric Cars</h5>
             <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-
-            <hr></hr>
           </article>
+          <hr></hr>
           <article className="">
             <h5>The Downsides of AI Artistry</h5>
             <p>
               What are the possible adverse effects of on-demand AI image
               generation?
             </p>
-            <hr></hr>
           </article>
+
+          <hr></hr>
+
           <article className="">
             <h5>Is VC Funding Drying up?</h5>
             <p>
               Private funding by VC firms is dowwn 50% YOY. We take a look at
               what that means.
             </p>
+          </article>
+        </section>
+      </div>
+      <div className="popular">
+        <section>
+          <article className="popular-article">
+            <img src={retroImg} alt="retro" />
+            <span className="popular-span">
+              <h5>01</h5>
+              <h6>Reviving Retro PCs</h6>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </span>
+          </article>
+          <article className="popular-article">
+            <img src={laptopImg} alt="laptop" />
+            <span className="popular-span">
+              <h5>02</h5>
+              <h6>Top 10 Laptops of 2023</h6>
+              <p>Out best picks for various needs and budgets.</p>
+            </span>
+          </article>
+          <article className="popular-article">
+            <img src={gamingImg} alt="gaming" />
+            <span className="popular-article">
+              <h5>03</h5>
+              <h6>The Growth of Gaming</h6>
+              <p>How th pandemic has sparked fresh opportunities.</p>
+            </span>
           </article>
         </section>
       </div>
