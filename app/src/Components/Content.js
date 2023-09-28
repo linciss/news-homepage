@@ -59,32 +59,30 @@ function Content() {
         </section>
       </div>
       <div className="popular">
-        <section>
-          <article className="popular-article">
-            <img src={retroImg} alt="retro" />
-            <span className="popular-span">
-              <h5>01</h5>
-              <h6>Reviving Retro PCs</h6>
-              <p>What happens when old PCs are given modern upgrades?</p>
-            </span>
-          </article>
-          <article className="popular-article">
-            <img src={laptopImg} alt="laptop" />
-            <span className="popular-span">
-              <h5>02</h5>
-              <h6>Top 10 Laptops of 2023</h6>
-              <p>Out best picks for various needs and budgets.</p>
-            </span>
-          </article>
-          <article className="popular-article">
-            <img src={gamingImg} alt="gaming" />
-            <span className="popular-article">
-              <h5>03</h5>
-              <h6>The Growth of Gaming</h6>
-              <p>How th pandemic has sparked fresh opportunities.</p>
-            </span>
-          </article>
-        </section>
+        <article className="popular-article">
+          <img src={retroImg} alt="retro" />
+          <span className="">
+            <h3>01</h3>
+            <h5>Reviving Retro PCs</h5>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </span>
+        </article>
+        <article className="popular-article">
+          <img src={laptopImg} alt="laptop" />
+          <span className="">
+            <h3>02</h3>
+            <h5>Top 10 Laptops of 2023</h5>
+            <p>Out best picks for various needs and budgets.</p>
+          </span>
+        </article>
+        <article className="popular-article">
+          <img src={gamingImg} alt="gaming" />
+          <span className="">
+            <h3>03</h3>
+            <h5>The Growth of Gaming</h5>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </span>
+        </article>
       </div>
     </>
   );

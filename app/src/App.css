@@ -12,7 +12,7 @@ body {
 }
 
 #root {
-  max-width: 1140px;
+  max-width: 1240px;
   margin: 0 auto;
 }
 
@@ -89,6 +89,10 @@ header img {
   color: hsl(0, 0%, 100%);
   font-weight: bold;
 }
+h5:hover {
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
+}
 .new article p {
   color: hsl(231, 4%, 65%);
 }
@@ -104,7 +108,6 @@ hr {
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
-  cursor: pointer;
   border-radius: 0px;
   width: 50%;
   font-weight: 700;
@@ -115,17 +118,26 @@ hr {
 }
 .popular {
   margin-top: 5rem;
-}
-.popular section {
   display: flex;
   justify-content: space-between;
 }
 .popular article {
   display: flex;
 }
-.popular img {
-  width: 20%;
+.popular-article span {
+  margin: 0 1rem;
 }
+.popular img {
+  width: 30%;
+}
+.popular h3,
+h5 {
+  font-weight: bold;
+}
+.popular h3 {
+  color: hsl(240, 3%, 71%);
+}
+
 @media (max-width: 840px) {
   .menu {
     display: flex;
@@ -203,5 +215,31 @@ hr {
   }
   header section p {
     margin: 0rem;
+  }
+  .popular {
+    flex-direction: column;
+    margin: 1rem 0;
+    justify-content: space-between;
+  }
+
+  .popular article {
+    margin: 1rem 0;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+  .popular span {
+    margin: 0 2rem;
+  }
+  .popular img {
+    width: 20%;
   }
 }
